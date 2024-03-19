@@ -1,0 +1,7 @@
+---
+- name: pingpong
+  hosts: "{{ group_a | default('server_all') }}"
+  remote_user: root
+
+  roles:
+    - pong

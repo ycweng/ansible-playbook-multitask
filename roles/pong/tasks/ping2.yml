@@ -1,0 +1,10 @@
+---
+- name: ping test
+  hosts:
+    - server_all
+  tasks:
+    - ping:
+      register: msg
+    - name:
+      debug:
+        msg: "{{ msg }} \n yaya"
