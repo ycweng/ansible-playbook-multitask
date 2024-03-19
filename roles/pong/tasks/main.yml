@@ -4,7 +4,7 @@
   register: msg
 - debug:
     msg: "{{ msg }} this is main"
-  when: '"{{ ENV }} " == "uat" or "{{ ENV }} " == "prod"'
+  when: '"{{ ENV }}" == "uat" or "{{ ENV }}" == "prod"'
 
 - include_tasks: ping.yml
 - include_tasks: ping2.yml
