@@ -1,3 +1,9 @@
 ---
+- name: "ping main"
+  ping:
+  register: msg
+- debug:
+    msg: "{{ msg }} this is main"
+
 - include_tasks: ping.yml
 - include_tasks: ping2.yml
