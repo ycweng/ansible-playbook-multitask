@@ -1,5 +1,5 @@
 ---
-- name: ping test
+- name: "ping test"
   hosts:
     - server_all
   tasks:
